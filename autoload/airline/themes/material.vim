@@ -20,7 +20,7 @@ let s:gui.violet    = '#BB80B3'
 let s:gui.brown     = '#AB7967'
 
 let g:airline#themes#material#palette = {}
-let s:modified = { 'airline_c': [ '#ffb964', '', 215, '', '' ] }
+let s:modified = { 'airline_c': [ s:gui.blue_grey, '', 215, '', '' ] }
 
 " Normal mode
 let s:N1 = [ s:gui.blue_grey , s:gui.cyan , "" , ""  ]
