@@ -20,7 +20,7 @@ let s:gui.violet    = '#BB80B3'
 let s:gui.brown     = '#AB7967'
 
 let g:airline#themes#material#palette = {}
-let s:modified = { 'airline_c': [ s:gui.blue_grey, '', 215, '', '' ] }
+let s:modified = { 'airline_c': [ s:gui.yellow, s:gui.selection, 215, '', '' ] }
 
 " Normal mode
 let s:N1 = [ s:gui.blue_grey , s:gui.cyan , "" , ""  ]
@@ -51,9 +51,9 @@ let g:airline#themes#material#palette.replace = airline#themes#generate_color_ma
 let g:airline#themes#material#palette.replace_modified = s:modified
 
 " Inactive mode
-let s:IN1 = [ s:gui.comment , s:gui.blue_grey , "" , ""  ]
-let s:IN2 = [ s:gui.comment , s:gui.blue_grey , "" , ""  ]
-let s:IN3 = [ s:gui.comment , s:gui.blue_grey , "" , ""  ]
+let s:IN1 = [ s:gui.comment , s:gui.line , "" , ""  ]
+let s:IN2 = [ s:gui.comment , s:gui.line , "" , ""  ]
+let s:IN3 = [ s:gui.comment , s:gui.line , "" , ""  ]
 let g:airline#themes#material#palette.inactive = airline#themes#generate_color_map(s:IN1, s:IN2, s:IN3)
 let g:airline#themes#material#palette.inactive_modified = s:modified
 
