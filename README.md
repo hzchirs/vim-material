@@ -1,7 +1,7 @@
 # vim-material
 Vim colorscheme  inspired by [equinusocio's Material Theme](https://github.com/equinusocio/material-theme)(GUI Only).
 
-![VIM screenshot](https://upload.cc/i/esd0NK.png)
+![VIM screenshot](https://upload.cc/i/TQY4HU.png)
 
 Installation
 ------------
