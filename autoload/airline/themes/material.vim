@@ -37,7 +37,7 @@ let g:airline#themes#material#palette.insert = airline#themes#generate_color_map
 let g:airline#themes#material#palette.insert_modified = s:modified
 
 " Visual mode
-let s:V1 = [ s:gui.blue_grey , s:gui.purple , "" , ""  ]
+let s:V1 = [ s:gui.blue_grey , s:gui.green , "" , ""  ]
 let s:V2 = [ s:gui.white , s:gui.selection , "" , ""  ]
 let s:V3 = [ s:gui.white , s:gui.selection , "" , ""  ]
 let g:airline#themes#material#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
