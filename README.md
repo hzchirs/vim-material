@@ -1,7 +1,13 @@
 # vim-material
 Vim colorscheme  inspired by [equinusocio's Material Theme](https://github.com/equinusocio/material-theme)(GUI Only).
 
+Screen Shot
+------------
 ![VIM screenshot](https://upload.cc/i/TQY4HU.png)
+
+fugitive GDiff
+------------
+![fugitive GDiff](https://upload.cc/i/bFhH54.png)
 
 Installation
 ------------
