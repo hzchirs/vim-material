@@ -114,3 +114,6 @@ call s:hi("Special",     s:gui.orange,     "",               "", "", "")
 " Ruby colors
 call s:hi("rubySymbolDelimiter", s:gui.cyan, "", "", "", "")
 call s:hi("rubyKeywordAsMethod", s:gui.blue, "", "", "", "")
+
+" Elixir colors
+call s:hi("elixirKeyword", s:gui.blue, "", "", "", "")
