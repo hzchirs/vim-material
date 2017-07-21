@@ -7,7 +7,7 @@ Screen Shot
 
 fugitive GDiff
 ------------
-![fugitive GDiff](https://upload.cc/i/bFhH54.png)
+![fugitive GDiff](https://upload.cc/i/zCvpHJ.png)
 
 Installation
 ------------
