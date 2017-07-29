@@ -121,7 +121,8 @@ call s:hi("rubyKeywordAsMethod", s:gui.blue, "", "", "", "")
 call s:hi("elixirKeyword", s:gui.blue, "", "", "", "")
 
 " Javascript colors
+call s:hi("javascriptVariable",    s:gui.purple, "", "", "", "")
 call s:hi("javascriptObjectLabel", s:gui.blue, "", "", "", "")
-call s:hi("javascriptBlock",       s:gui.blue, "", "", "", "")
 call s:hi("javascriptProperty",    s:gui.cyan, "", "", "", "")
 call s:hi("javascriptBraces",      s:gui.cyan, "", "", "", "")
+call s:hi("javascriptBrackets",    s:gui.cyan, "", "", "", "")
