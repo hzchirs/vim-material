@@ -116,16 +116,23 @@ call s:hi("Special",     s:gui.orange,     "",               "", "", "")
 " Ruby colors
 call s:hi("rubySymbolDelimiter", s:gui.cyan, "", "", "", "")
 call s:hi("rubyKeywordAsMethod", s:gui.blue, "", "", "", "")
+call s:hi("rubyConstant",        s:gui.yellow, "", "", "", "")
+call s:hi("rubyClassName",       s:gui.yellow, "", "", "", "bold")
+
+"eRuby colors
+call s:hi("eRubyDelimiter", s:gui.cyan, "", "", "", "")
 
 " Elixir colors
 call s:hi("elixirKeyword", s:gui.blue, "", "", "", "")
 
 " Javascript colors
-call s:hi("javascriptVariable",    s:gui.purple, "", "", "", "")
-call s:hi("javascriptObjectLabel", s:gui.blue, "", "", "", "")
-call s:hi("javascriptProperty",    s:gui.cyan, "", "", "", "")
-call s:hi("javascriptBraces",      s:gui.cyan, "", "", "", "")
-call s:hi("javascriptBrackets",    s:gui.cyan, "", "", "", "")
+call s:hi("javascriptVariable",       s:gui.purple, "", "", "", "")
+call s:hi("javascriptObjectLabel",    s:gui.blue, "", "", "", "")
+call s:hi("javascriptProperty",       s:gui.cyan, "", "", "", "")
+call s:hi("javascriptBraces",         s:gui.cyan, "", "", "", "")
+call s:hi("javascriptBrackets",       s:gui.cyan, "", "", "", "")
+call s:hi("javascriptClassName",      s:gui.yellow, "", "", "", "bold")
+call s:hi("javascriptClassSuperName", s:gui.yellow, "", "", "", "")
 
 " HTML colors
 call s:hi("htmlTag",     s:gui.cyan, "", "", "", "")
