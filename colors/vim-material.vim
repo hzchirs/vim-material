@@ -126,3 +126,15 @@ call s:hi("javascriptObjectLabel", s:gui.blue, "", "", "", "")
 call s:hi("javascriptProperty",    s:gui.cyan, "", "", "", "")
 call s:hi("javascriptBraces",      s:gui.cyan, "", "", "", "")
 call s:hi("javascriptBrackets",    s:gui.cyan, "", "", "", "")
+
+" HTML colors
+call s:hi("htmlTag",     s:gui.cyan, "", "", "", "")
+call s:hi("htmlEndTag",  s:gui.cyan, "", "", "", "")
+call s:hi("htmlTagName", s:gui.red, "", "", "", "")
+call s:hi("htmlArg",     s:gui.yellow, "", "", "", "")
+
+" jsx colors
+call s:hi("xmlTag",     s:gui.cyan, "", "", "", "")
+call s:hi("xmlEndTag",  s:gui.cyan, "", "", "", "")
+call s:hi("xmlTagName", s:gui.red, "", "", "", "")
+call s:hi("xmlAttrib",  s:gui.yellow, "", "", "", "")
