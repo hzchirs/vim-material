@@ -61,7 +61,6 @@ function! s:gui(color)
 endfunction
 
 " Editor colors
-call s:hi("CursorLine",   s:gui.none,       s:gui.line,       "", "", "")
 call s:hi("ColorColumn",  s:gui.none,       s:gui.line,       "", "", "")
 call s:hi("Cursor",       s:gui.yellow,     "",               "", "", "")
 call s:hi("CursorColumn", s:gui.none,       s:gui.line,       "", "", "")
