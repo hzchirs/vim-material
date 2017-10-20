@@ -14,7 +14,7 @@ Installation
 **Note:** support true color terminal and gvim only
 
 ```vim
-Plug 'hzchirs/vim-material
+Plug 'hzchirs/vim-material'
 
 colorscheme vim-material
 ```
