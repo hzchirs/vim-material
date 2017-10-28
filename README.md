@@ -3,7 +3,7 @@ Vim colorscheme  inspired by [equinusocio's Material Theme](https://github.com/e
 
 Screenshot
 ------------
-![VIM screenshot](https://upload.cc/i/TQY4HU.png)
+![VIM screenshot](https://imgur.com/xfGYwwc.jpg)
 
 fugitive GDiff
 ------------
