@@ -1,5 +1,7 @@
 # vim-material
-Vim colorscheme  inspired by [equinusocio's Material Theme](https://github.com/equinusocio/material-theme)(GUI Only).
+Vim colorscheme  inspired by [equinusocio's Material Theme](https://github.com/equinusocio/material-theme).
+
+**Note:** support true color terminal and gvim only
 
 Screenshot
 ------------
@@ -11,8 +13,8 @@ fugitive GDiff
 
 Installation
 ------------
-**Note:** support true color terminal and gvim only
 
+* [vim-plug](https://github.com/junegunn/vim-plug)
 ```vim
 Plug 'hzchirs/vim-material'
 
@@ -25,3 +27,7 @@ Colorscheme also include an [Airline](https://github.com/vim-airline/vim-airline
 ```vim
 let g:airline_theme='material'
 ```
+
+License
+---
+MIT
