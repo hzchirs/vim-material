@@ -1,7 +1,7 @@
-" vim-material Theme v0.0.1
+" vim-material Theme v1.0.0
 
 set background=dark
-highlight clear
+highlight clear 
 
 if exists("syntax_on")
   syntax reset
