@@ -23,10 +23,11 @@ let s:gui.red          = { 'dark': '#FF5370', 'light': '#E53935' }
 let s:gui.dark_red     = { 'dark': '#B71C1C', 'light': '#E53935' }
 let s:gui.pink         = { 'dark': '#F07178', 'light': '#FF5370' }
 let s:gui.orange       = { 'dark': '#F78C6C', 'light': '#F76D47' }
+let s:gui.light_yellow = { 'dark': '#FFE57F', 'light': '#FFB62C' }
 let s:gui.yellow       = { 'dark': '#FFCB6B', 'light': '#FFB62C' }
 let s:gui.green        = { 'dark': '#C3E88D', 'light': '#91B859' }
 let s:gui.teal         = { 'dark': '#004D40', 'light': '#91B859' }
-let s:gui.lighter_teal = { 'dark': '#00897B', 'light': '#91B859' }
+let s:gui.light_teal   = { 'dark': '#69f0ae', 'light': '#91B859' }
 let s:gui.pale_blue    = { 'dark': '#B2CCD6', 'light': '#8796B0' }
 let s:gui.cyan         = { 'dark': '#89DDFF', 'light': '#39ADB5' }
 let s:gui.blue         = { 'dark': '#82AAFF', 'light': '#6182B8' }
@@ -59,6 +60,26 @@ function! s:gui(color)
     return a:color['dark']
   endif
 endfunction
+
+" Neovim Terminal colors
+if has("nvim")
+  let g:terminal_color_0  = s:gui(s:gui.background)
+  let g:terminal_color_1  = s:gui(s:gui.red)
+  let g:terminal_color_2  = s:gui(s:gui.green)
+  let g:terminal_color_3  = s:gui(s:gui.light_yellow)
+  let g:terminal_color_4  = s:gui(s:gui.blue)
+  let g:terminal_color_5  = s:gui(s:gui.pink)
+  let g:terminal_color_6  = s:gui(s:gui.light_teal)
+  let g:terminal_color_7  = s:gui(s:gui.pale_blue)
+  let g:terminal_color_8  = s:gui(s:gui.selection)
+  let g:terminal_color_9  = s:gui(s:gui.red)
+  let g:terminal_color_10 = s:gui(s:gui.green)
+  let g:terminal_color_11 = s:gui(s:gui.light_yellow)
+  let g:terminal_color_12 = s:gui(s:gui.cyan)
+  let g:terminal_color_13 = s:gui(s:gui.purple)
+  let g:terminal_color_14 = s:gui(s:gui.cyan)
+  let g:terminal_color_15 = s:gui(s:gui.foreground)
+endif
 
 " Editor colors
 call s:hi("ColorColumn",  s:gui.none,       s:gui.line,       "", "", "")
