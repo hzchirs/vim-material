@@ -99,12 +99,10 @@ call s:hi("WarningMsg",   s:gui.orange,     "",               "", "", "")
 call s:hi("VertSplit",    s:gui.background, s:gui.foreground, "", "", "")
 call s:hi("Conceal",      s:gui.comment,    s:gui.background, "", "", "")
 
-call s:hi("DiffAdd",     "",          s:gui.teal,         "", "", "")
-call s:hi("DiffAdded",   s:gui.green, "",                 "", "", "")
-call s:hi("DiffChange",  "",          s:gui.teal,         "", "", "")
-call s:hi("DiffRemoved", s:gui.red,   "",                 "", "", "")
-call s:hi("DiffDelete",  s:gui.red,   s:gui.dark_red,     "", "", "")
-call s:hi("DiffText",    "",          s:gui.lighter_teal, "", "", "")
+call s:hi("DiffAdd",    "",        s:gui.teal,       "", "", "")
+call s:hi("DiffChange", "",        s:gui.teal,       "", "", "")
+call s:hi("DiffDelete", s:gui.red, s:gui.background, "", "", "")
+call s:hi("DiffText",   "",        s:gui.selection,  "", "", "")
 
 
 call s:hi("NonText",     s:gui.comment,    "",               "", "", "")
