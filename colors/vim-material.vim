@@ -8,7 +8,7 @@
 " -----------------------------------------------------------------------------
 
 if version > 580
-  highlight clear 
+  highlight clear
   if exists("syntax_on")
     syntax reset
   endif
@@ -19,28 +19,32 @@ let g:colors_name = "vim-material"
 let s:gui = {}
 let s:cterm = {}
 
-let s:gui.background = { 'dark': '#263238', 'light': '#FAFAFA' }
-let s:gui.foreground = { 'dark': '#EEFFFF', 'light': '#666666' }
-let s:gui.none       = { 'dark': 'NONE', 'light': 'NONE' }
-let s:gui.selection  = { 'dark': '#455A64', 'light': '#CCEAE7' }
-let s:gui.line       = { 'dark': '#212121', 'light': '#D8EFED' }
-let s:gui.comment    = { 'dark': '#5D818E', 'light': '#90A4AE' }
+let s:gui.background = { 'dark': '#263238', 'light': '#FAFAFA', 'palenight': '#292D3E' }
+let s:gui.foreground = { 'dark': '#ECEFF1', 'light': '#666666', 'palenight': '#A6ACCD'}
+let s:gui.none       = { 'dark': 'NONE',    'light': 'NONE',    'palenight': 'NONE' }
+let s:gui.selection  = { 'dark': '#455A64', 'light': '#CCEAE7', 'palenight': '#434A6C' }
+let s:gui.line       = { 'dark': '#212121', 'light': '#EAEFF0', 'palenight': '#191919' }
+let s:gui.comment    = { 'dark': '#5D818E', 'light': '#90A4AE', 'palenight': '#676E95' }
 
-let s:gui.red          = { 'dark': '#FF5370', 'light': '#E53935' }
-let s:gui.dark_red     = { 'dark': '#B71C1C', 'light': '#E53935' }
-let s:gui.pink         = { 'dark': '#F07178', 'light': '#FF5370' }
-let s:gui.orange       = { 'dark': '#F78C6C', 'light': '#F76D47' }
-let s:gui.light_yellow = { 'dark': '#FFE57F', 'light': '#FFB62C' }
-let s:gui.yellow       = { 'dark': '#FFCB6B', 'light': '#FFAD13' }
-let s:gui.green        = { 'dark': '#C3E88D', 'light': '#82A550' }
-let s:gui.teal         = { 'dark': '#004D40', 'light': '#CCEAE7' }
-let s:gui.light_teal   = { 'dark': '#69f0ae', 'light': '#73B6B0' }
-let s:gui.pale_blue    = { 'dark': '#B2CCD6', 'light': '#8796B0' }
-let s:gui.cyan         = { 'dark': '#89DDFF', 'light': '#39ADB5' }
-let s:gui.blue         = { 'dark': '#82AAFF', 'light': '#6182B8' }
-let s:gui.purple       = { 'dark': '#C792EA', 'light': '#7C4DFF' }
-let s:gui.violet       = { 'dark': '#BB80B3', 'light': '#945EB8' }
-let s:gui.brown        = { 'dark': '#AB7967', 'light': '#AB7967' }
+let s:gui.red          = { 'dark': '#FF5370', 'light': '#E53935', 'palenight': '#FF5370' }
+let s:gui.dark_red     = { 'dark': '#B71C1C', 'light': '#E53935', 'palenight': '#FF5370'  }
+let s:gui.pink         = { 'dark': '#F07178', 'light': '#FF5370', 'palenight': '#F07178'  }
+let s:gui.orange       = { 'dark': '#F78C6C', 'light': '#F76D47', 'palenight': '#F78C6C'  }
+let s:gui.light_yellow = { 'dark': '#FFE57F', 'light': '#FFB62C', 'palenight': '#FFCC00'  }
+let s:gui.yellow       = { 'dark': '#FFCB6B', 'light': '#FFAD13', 'palenight': '#FFCB6B'  }
+let s:gui.green        = { 'dark': '#C3E88D', 'light': '#82A550', 'palenight': '#C3E88D'  }
+let s:gui.teal         = { 'dark': '#004D40', 'light': '#CCEAE7', 'palenight': '#FF5370'  }
+let s:gui.light_teal   = { 'dark': '#69f0ae', 'light': '#73B6B0', 'palenight': '#FF5370'  }
+let s:gui.pale_blue    = { 'dark': '#B2CCD6', 'light': '#8796B0', 'palenight': '#FF5370'  }
+let s:gui.cyan         = { 'dark': '#89DDFF', 'light': '#39ADB5', 'palenight': '#89DDFF'  }
+let s:gui.blue         = { 'dark': '#82AAFF', 'light': '#6182B8', 'palenight': '#82AAFF'  }
+let s:gui.purple       = { 'dark': '#C792EA', 'light': '#7C4DFF', 'palenight': '#C792EA'  }
+let s:gui.violet       = { 'dark': '#BB80B3', 'light': '#945EB8', 'palenight': '#BB80B3'  }
+let s:gui.brown        = { 'dark': '#AB7967', 'light': '#AB7967', 'palenight': '#C17E70'  }
+
+if !exists('g:material_style')
+  let g:material_style='default'
+endif
 
 function! s:hi(group, guifg, guibg, ctermfg, ctermbg, attr)
   if s:gui(a:guifg) != ""
@@ -64,7 +68,11 @@ function! s:gui(color)
   if &background == "light"
     return a:color['light']
   else
-    return a:color['dark']
+    if g:material_style == 'default'
+      return a:color['dark']
+    else
+      return a:color[g:material_style]
+    endif
   endif
 endfunction
 
