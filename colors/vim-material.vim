@@ -1,10 +1,17 @@
-" vim-material Theme v1.0.0
+" -----------------------------------------------------------------------------
+" File: vim-material.vim
+" Description: A equinusocio's Material Theme porting
+" Porting From: https://github.com/equinusocio/vsc-material-theme
+" Author: hzchris <hzchirs@gmail.com>
+" Source: https://github.com/hzchirs/vim-material
+" Last Modified: 1 July 2018
+" -----------------------------------------------------------------------------
 
-set background=dark
-highlight clear 
-
-if exists("syntax_on")
-  syntax reset
+if version > 580
+  highlight clear 
+  if exists("syntax_on")
+    syntax reset
+  endif
 endif
 
 let g:colors_name = "vim-material"
@@ -12,22 +19,22 @@ let g:colors_name = "vim-material"
 let s:gui = {}
 let s:cterm = {}
 
-let s:gui.background = { 'dark': '#263238', 'light': '#E4E4E4' }
-let s:gui.foreground = { 'dark': '#EEFFFF', 'light': '#000000' }
+let s:gui.background = { 'dark': '#263238', 'light': '#FAFAFA' }
+let s:gui.foreground = { 'dark': '#EEFFFF', 'light': '#666666' }
 let s:gui.none       = { 'dark': 'NONE', 'light': 'NONE' }
-let s:gui.selection  = { 'dark': '#455A64', 'light': '#BCBCBC' }
-let s:gui.line       = { 'dark': '#212121', 'light': '#D0D0D0' }
-let s:gui.comment    = { 'dark': '#5D818E', 'light': '#5F5F5F' }
+let s:gui.selection  = { 'dark': '#455A64', 'light': '#CCEAE7' }
+let s:gui.line       = { 'dark': '#212121', 'light': '#D8EFED' }
+let s:gui.comment    = { 'dark': '#5D818E', 'light': '#90A4AE' }
 
 let s:gui.red          = { 'dark': '#FF5370', 'light': '#E53935' }
 let s:gui.dark_red     = { 'dark': '#B71C1C', 'light': '#E53935' }
 let s:gui.pink         = { 'dark': '#F07178', 'light': '#FF5370' }
 let s:gui.orange       = { 'dark': '#F78C6C', 'light': '#F76D47' }
 let s:gui.light_yellow = { 'dark': '#FFE57F', 'light': '#FFB62C' }
-let s:gui.yellow       = { 'dark': '#FFCB6B', 'light': '#FFB62C' }
-let s:gui.green        = { 'dark': '#C3E88D', 'light': '#91B859' }
-let s:gui.teal         = { 'dark': '#004D40', 'light': '#91B859' }
-let s:gui.light_teal   = { 'dark': '#69f0ae', 'light': '#91B859' }
+let s:gui.yellow       = { 'dark': '#FFCB6B', 'light': '#FFAD13' }
+let s:gui.green        = { 'dark': '#C3E88D', 'light': '#82A550' }
+let s:gui.teal         = { 'dark': '#004D40', 'light': '#CCEAE7' }
+let s:gui.light_teal   = { 'dark': '#69f0ae', 'light': '#73B6B0' }
 let s:gui.pale_blue    = { 'dark': '#B2CCD6', 'light': '#8796B0' }
 let s:gui.cyan         = { 'dark': '#89DDFF', 'light': '#39ADB5' }
 let s:gui.blue         = { 'dark': '#82AAFF', 'light': '#6182B8' }
@@ -132,7 +139,6 @@ call s:hi("Search",      s:gui.none,       s:gui.none,       "", "", "underline"
 call s:hi("InSearch",    s:gui.background, s:gui.foreground, "", "", "")
 call s:hi("Todo",        s:gui.red,        s:gui.foreground, "", "", "reverse")
 call s:hi("Special",     s:gui.orange,     "",               "", "", "")
-
 
 
 " Ruby colors
