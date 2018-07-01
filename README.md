@@ -6,12 +6,14 @@ Vim colorscheme port from [equinusocio's Material Theme](https://github.com/equi
 Screenshot
 ------------
 
-## Dark
+**Dark**
 ![Dark](https://imgur.com/xfGYwwc.jpg)
 
-## Light
+**Light**
 ![Light](https://user-images.githubusercontent.com/4735528/42131913-8c1b0d68-7d3f-11e8-935a-4c10181127d9.png)
 
+**Palenight
+![Palenight](https://user-images.githubusercontent.com/4735528/42134016-056046f4-7d66-11e8-9ea0-c96a59a5b7b0.png)
 
 Installation
 ------------
@@ -21,6 +23,11 @@ Installation
 Plug 'hzchirs/vim-material'
 
 " Dark
+set background=dark
+colorscheme vim-material
+
+" Palenight
+let g:material_style='palenight'
 set background=dark
 colorscheme vim-material
 
@@ -34,9 +41,6 @@ Colorscheme also include an [Airline](https://github.com/vim-airline/vim-airline
 
 ```vim
 let g:airline_theme='material'
-
-" Light version
-let g:airline_theme='material_light'
 ```
 
 License
