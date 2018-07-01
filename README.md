@@ -1,5 +1,6 @@
 # vim-material
-Vim colorscheme port from [equinusocio's Material Theme](https://github.com/equinusocio/material-theme).
+[equinusocio's Material Theme](https://github.com/equinusocio/vsc-material-theme) port
+for vim.
 
 **Note:** support true color terminal and gvim only
 
