@@ -4,7 +4,7 @@
 " Porting From: https://github.com/equinusocio/vsc-material-theme
 " Author: hzchris <hzchirs@gmail.com>
 " Source: https://github.com/hzchirs/vim-material
-" Last Modified: 1 July 2018
+" Last Modified: 2 July 2018
 " -----------------------------------------------------------------------------
 
 if version > 580
@@ -30,7 +30,7 @@ let s:gui.red          = { 'dark': '#FF5370', 'light': '#E53935', 'palenight': '
 let s:gui.dark_red     = { 'dark': '#B71C1C', 'light': '#E53935', 'palenight': '#FF5370'  }
 let s:gui.pink         = { 'dark': '#F07178', 'light': '#FF5370', 'palenight': '#F07178'  }
 let s:gui.orange       = { 'dark': '#F78C6C', 'light': '#F76D47', 'palenight': '#F78C6C'  }
-let s:gui.light_yellow = { 'dark': '#FFE57F', 'light': '#FFB62C', 'palenight': '#FFE57F'  }
+let s:gui.light_yellow = { 'dark': '#FFE57F', 'light': '#FFAD13', 'palenight': '#FFE57F'  }
 let s:gui.yellow       = { 'dark': '#FFCB6B', 'light': '#FFAD13', 'palenight': '#FFCB6B'  }
 let s:gui.green        = { 'dark': '#C3E88D', 'light': '#82A550', 'palenight': '#C3E88D'  }
 let s:gui.teal         = { 'dark': '#004D40', 'light': '#CCEAE7', 'palenight': '#004D40'  }
