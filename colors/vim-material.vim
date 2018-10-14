@@ -4,7 +4,7 @@
 " Porting From: https://github.com/equinusocio/vsc-material-theme
 " Author: hzchris <hzchirs@gmail.com>
 " Source: https://github.com/hzchirs/vim-material
-" Last Modified: 2 July 2018
+" Last Modified: 15 October 2018
 " -----------------------------------------------------------------------------
 
 if version > 580
@@ -19,28 +19,28 @@ let g:colors_name = "vim-material"
 let s:gui = {}
 let s:cterm = {}
 
-let s:gui.background = { 'dark': '#263238', 'light': '#FAFAFA', 'palenight': '#292D3E' }
-let s:gui.foreground = { 'dark': '#ECEFF1', 'light': '#666666', 'palenight': '#A6ACCD'}
-let s:gui.none       = { 'dark': 'NONE',    'light': 'NONE',    'palenight': 'NONE' }
-let s:gui.selection  = { 'dark': '#455A64', 'light': '#CCEAE7', 'palenight': '#434A6C' }
-let s:gui.line       = { 'dark': '#212121', 'light': '#EAEFF0', 'palenight': '#191919' }
-let s:gui.comment    = { 'dark': '#5D818E', 'light': '#90A4AE', 'palenight': '#676E95' }
+let s:gui.background = { 'dark': '#263238', 'light': '#FAFAFA', 'palenight': '#292D3E', 'oceanic': '#0F111A'  }
+let s:gui.foreground = { 'dark': '#ECEFF1', 'light': '#666666', 'palenight': '#A6ACCD', 'oceanic': '#A6ACCD'  }
+let s:gui.none       = { 'dark': 'NONE',    'light': 'NONE',    'palenight': 'NONE'   , 'oceanic': 'NONE'     }
+let s:gui.selection  = { 'dark': '#455A64', 'light': '#CCEAE7', 'palenight': '#434A6C', 'oceanic': '#292D3E'  }
+let s:gui.line       = { 'dark': '#212121', 'light': '#EAEFF0', 'palenight': '#191919', 'oceanic': '#191919'  }
+let s:gui.comment    = { 'dark': '#5D818E', 'light': '#90A4AE', 'palenight': '#676E95', 'oceanic': '#525975'  }
 
-let s:gui.red          = { 'dark': '#FF5370', 'light': '#E53935', 'palenight': '#FF5370' }
-let s:gui.dark_red     = { 'dark': '#B71C1C', 'light': '#E53935', 'palenight': '#FF5370'  }
-let s:gui.pink         = { 'dark': '#F07178', 'light': '#FF5370', 'palenight': '#F07178'  }
-let s:gui.orange       = { 'dark': '#F78C6C', 'light': '#F76D47', 'palenight': '#F78C6C'  }
-let s:gui.light_yellow = { 'dark': '#FFE57F', 'light': '#FFAD13', 'palenight': '#FFE57F'  }
-let s:gui.yellow       = { 'dark': '#FFCB6B', 'light': '#FFAD13', 'palenight': '#FFCB6B'  }
-let s:gui.green        = { 'dark': '#C3E88D', 'light': '#82A550', 'palenight': '#C3E88D'  }
-let s:gui.teal         = { 'dark': '#004D40', 'light': '#CCEAE7', 'palenight': '#004D40'  }
-let s:gui.light_teal   = { 'dark': '#69F0AE', 'light': '#73B6B0', 'palenight': '#69F0AE'  }
-let s:gui.pale_blue    = { 'dark': '#B2CCD6', 'light': '#8796B0', 'palenight': '#B2CCD6'  }
-let s:gui.cyan         = { 'dark': '#89DDFF', 'light': '#39ADB5', 'palenight': '#89DDFF'  }
-let s:gui.blue         = { 'dark': '#82AAFF', 'light': '#6182B8', 'palenight': '#82AAFF'  }
-let s:gui.purple       = { 'dark': '#C792EA', 'light': '#7C4DFF', 'palenight': '#C792EA'  }
-let s:gui.violet       = { 'dark': '#BB80B3', 'light': '#945EB8', 'palenight': '#BB80B3'  }
-let s:gui.brown        = { 'dark': '#AB7967', 'light': '#AB7967', 'palenight': '#C17E70'  }
+let s:gui.red          = { 'dark': '#FF5370', 'light': '#E53935', 'palenight': '#FF5370', 'oceanic': '#FF5370'  }
+let s:gui.dark_red     = { 'dark': '#B71C1C', 'light': '#E53935', 'palenight': '#FF5370', 'oceanic': '#FF5370'  }
+let s:gui.pink         = { 'dark': '#F07178', 'light': '#FF5370', 'palenight': '#F07178', 'oceanic': '#F07178'  }
+let s:gui.orange       = { 'dark': '#F78C6C', 'light': '#F76D47', 'palenight': '#F78C6C', 'oceanic': '#F78C6C'  }
+let s:gui.light_yellow = { 'dark': '#FFE57F', 'light': '#FFAD13', 'palenight': '#FFE57F', 'oceanic': '#FFE57F'  }
+let s:gui.yellow       = { 'dark': '#FFCB6B', 'light': '#FFAD13', 'palenight': '#FFCB6B', 'oceanic': '#FFCB6B'  }
+let s:gui.green        = { 'dark': '#C3E88D', 'light': '#82A550', 'palenight': '#C3E88D', 'oceanic': '#C3E88D'  }
+let s:gui.teal         = { 'dark': '#004D40', 'light': '#CCEAE7', 'palenight': '#004D40', 'oceanic': '#004D40'  }
+let s:gui.light_teal   = { 'dark': '#69F0AE', 'light': '#73B6B0', 'palenight': '#69F0AE', 'oceanic': '#69F0AE'  }
+let s:gui.pale_blue    = { 'dark': '#B2CCD6', 'light': '#8796B0', 'palenight': '#B2CCD6', 'oceanic': '#B2CCD6'  }
+let s:gui.cyan         = { 'dark': '#89DDFF', 'light': '#39ADB5', 'palenight': '#89DDFF', 'oceanic': '#89DDFF'  }
+let s:gui.blue         = { 'dark': '#82AAFF', 'light': '#6182B8', 'palenight': '#82AAFF', 'oceanic': '#82AAFF'  }
+let s:gui.purple       = { 'dark': '#C792EA', 'light': '#7C4DFF', 'palenight': '#C792EA', 'oceanic': '#C792EA'  }
+let s:gui.violet       = { 'dark': '#BB80B3', 'light': '#945EB8', 'palenight': '#BB80B3', 'oceanic': '#BB80B3'  }
+let s:gui.brown        = { 'dark': '#AB7967', 'light': '#AB7967', 'palenight': '#C17E70', 'oceanic': '#C17E70'  }
 
 if !exists('g:material_style')
   let g:material_style='default'
@@ -202,4 +202,4 @@ call s:hi("htmlArg",            s:gui.yellow, "", "", "", "")
 call s:hi("xmlTag",     s:gui.cyan,   "", "", "", "")
 call s:hi("xmlEndTag",  s:gui.cyan,   "", "", "", "")
 call s:hi("xmlTagName", s:gui.red,    "", "", "", "")
-call s:hi("xmlAttrib",  s:gui.yellow, "", "", "", "")
+call s:hi("xmlAttrib", s:gui.yellow, "", "", "", "")
