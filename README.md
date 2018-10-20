@@ -17,7 +17,7 @@ Screenshot
 ![Palenight](https://user-images.githubusercontent.com/4735528/42134016-056046f4-7d66-11e8-9ea0-c96a59a5b7b0.png)
 
 **Oceanic**
-![Oceanic](https://user-images.githubusercontent.com/4735528/47250452-bb076c00-d453-11e8-86ec-bc2a771ea08f.png)
+![Oceanic](https://user-images.githubusercontent.com/4735528/47250634-6ebe2b00-d457-11e8-92d7-dabb871f60f1.png)
 
 Installation
 ------------
