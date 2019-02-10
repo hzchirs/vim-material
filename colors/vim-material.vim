@@ -1,10 +1,10 @@
 " -----------------------------------------------------------------------------
 " File: vim-material.vim
-" Description: A equinusocio's Material Theme porting
+" Description: equinusocio's Material Theme porting
 " Porting From: https://github.com/equinusocio/vsc-material-theme
 " Author: hzchris <hzchirs@gmail.com>
 " Source: https://github.com/hzchirs/vim-material
-" Last Modified: 15 October 2018
+" Last Modified: 10 February 2019
 " -----------------------------------------------------------------------------
 
 if version > 580
