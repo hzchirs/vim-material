@@ -147,6 +147,7 @@ call s:hi("Search",      s:gui.none,       s:gui.none,       "", "", "underline"
 call s:hi("InSearch",    s:gui.background, s:gui.foreground, "", "", "")
 call s:hi("Todo",        s:gui.red,        s:gui.foreground, "", "", "reverse")
 call s:hi("Special",     s:gui.orange,     "",               "", "", "")
+call s:hi("SignColumn",  "",               s:gui.background, "", "", "")
 
 
 " Ruby colors
@@ -232,3 +233,9 @@ call s:hi("xmlTag",     s:gui.cyan,   "", "", "", "")
 call s:hi("xmlEndTag",  s:gui.cyan,   "", "", "", "")
 call s:hi("xmlTagName", s:gui.red,    "", "", "", "")
 call s:hi("xmlAttrib",  s:gui.yellow, "", "", "", "")
+
+" GitGutter
+call s:hi("GitGutterAdd",          s:gui.green, s:gui.background, "", "", "")
+call s:hi("GitGutterChange",       s:gui.yellow,  s:gui.background, "", "", "")
+call s:hi("GitGutterDelete",       s:gui.red,   s:gui.background, "", "", "")
+call s:hi("GitGutterChangeDelete", s:gui.yellow,  s:gui.background, "", "", "")
