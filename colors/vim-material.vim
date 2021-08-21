@@ -253,11 +253,9 @@ call s:hi("TSVariable", s:gui.foreground, s:gui.background, "", "", "")
 call s:hi("TSVariableBuiltIn", s:gui.red, s:gui.background, "", "", "")
 call s:hi("TSProperty", s:gui.foreground, s:gui.background, "", "", "")
 call s:hi("TSBoolean", s:gui.orange, s:gui.background, "", "", "")
-call s:hi("TSField", s:gui.foreground, s:gui.background, "", "", "")
 
 call s:hi("TSTag", s:gui.pink, s:gui.background, "", "", "")
 call s:hi("TSTagAttribute", s:gui.purple, s:gui.background, "", "", "")
 call s:hi("TSTagDelimiter", s:gui.cyan, s:gui.background, "", "", "")
 
-call s:hi("cssTSProperty", s:gui.yellow, s:gui.background, "", "", "")
 call s:hi("cssTSProperty", s:gui.yellow, s:gui.background, "", "", "")
