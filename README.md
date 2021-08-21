@@ -10,7 +10,8 @@ __   _(_)_ __ ___        _ __ ___   __ _| |_ ___ _ __(_) __ _| |
 [equinusocio's Material Theme](https://github.com/equinusocio/vsc-material-theme) port
 for vim.
 
-**Note:** support true color terminal and gvim only
+* supports true color terminal and gvim only.
+* supports [treesitter](https://github.com/nvim-treesitter/nvim-treesitter).
 
 Screenshot
 ------------
