@@ -226,7 +226,7 @@ call s:hi("htmlTag",            s:gui.cyan,   "", "", "", "")
 call s:hi("htmlEndTag",         s:gui.cyan,   "", "", "", "")
 call s:hi("htmlTagName",        s:gui.red,    "", "", "", "")
 call s:hi("htmlSpecialTagName", s:gui.red,    "", "", "", "")
-call s:hi("htmlArg",            s:gui.yellow, "", "", "", "")
+call s:hi("htmlArg",            s:gui.purple, "", "", "", "")
 
 " jsx colors
 call s:hi("xmlTag",     s:gui.cyan,   "", "", "", "")
@@ -249,13 +249,21 @@ call s:hi("TSOperator", s:gui.purple, s:gui.background, "", "", "")
 call s:hi("TSKeyword", s:gui.cyan, s:gui.background, "", "", "")
 call s:hi("TSKeywordOperator", s:gui.cyan, s:gui.background, "", "", "")
 call s:hi("TSConstant", s:gui.foreground, s:gui.background, "", "", "")
+call s:hi("TSConstructor", s:gui.yellow, s:gui.background, "", "", "")
 call s:hi("TSVariable", s:gui.foreground, s:gui.background, "", "", "")
 call s:hi("TSVariableBuiltIn", s:gui.red, s:gui.background, "", "", "")
 call s:hi("TSProperty", s:gui.foreground, s:gui.background, "", "", "")
 call s:hi("TSBoolean", s:gui.orange, s:gui.background, "", "", "")
-
 call s:hi("TSTag", s:gui.pink, s:gui.background, "", "", "")
 call s:hi("TSTagAttribute", s:gui.purple, s:gui.background, "", "", "")
 call s:hi("TSTagDelimiter", s:gui.cyan, s:gui.background, "", "", "")
 
+" Treesitter html
+call s:hi("htmlEventDQ", s:gui.blue, s:gui.background, "", "", "")
+
+" Treesitter css
 call s:hi("cssTSProperty", s:gui.yellow, s:gui.background, "", "", "")
+
+" Treesitter javascript
+call s:hi("javascriptParens", s:gui.cyan, s:gui.background, "", "", "")
+call s:hi("javascriptValue", s:gui.orange, s:gui.background, "", "", "")
