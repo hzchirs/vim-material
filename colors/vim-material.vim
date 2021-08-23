@@ -27,7 +27,6 @@ let s:gui.line       = { 'dark': '#212121', 'light': '#EAEFF0', 'palenight': '#1
 let s:gui.comment    = { 'dark': '#5D818E', 'light': '#90A4AE', 'palenight': '#676E95', 'oceanic': '#525975'  }
 
 let s:gui.red          = { 'dark': '#FF5370', 'light': '#E53935', 'palenight': '#FF5370', 'oceanic': '#FF5370'  }
-let s:gui.dark_red     = { 'dark': '#B71C1C', 'light': '#E53935', 'palenight': '#FF5370', 'oceanic': '#FF5370'  }
 let s:gui.pink         = { 'dark': '#F07178', 'light': '#FF5370', 'palenight': '#F07178', 'oceanic': '#F07178'  }
 let s:gui.orange       = { 'dark': '#F78C6C', 'light': '#F76D47', 'palenight': '#F78C6C', 'oceanic': '#F78C6C'  }
 let s:gui.light_yellow = { 'dark': '#FFE57F', 'light': '#FF9913', 'palenight': '#FFE57F', 'oceanic': '#FFE57F'  }
