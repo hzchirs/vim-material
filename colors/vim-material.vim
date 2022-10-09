@@ -147,6 +147,8 @@ call s:hi("InSearch",    s:gui.background, s:gui.foreground, "", "", "")
 call s:hi("Todo",        s:gui.red,        s:gui.foreground, "", "", "reverse")
 call s:hi("Special",     s:gui.orange,     "",               "", "", "")
 call s:hi("SignColumn",  "",               s:gui.background, "", "", "")
+call s:hi("NormalFloat", s:gui.foreground, s:gui.background, "", "", "")
+call s:hi("FloatBorder", s:gui.foreground, s:gui.background, "", "", "")
 
 
 " Ruby colors
