@@ -148,7 +148,7 @@ call s:hi("Todo",        s:gui.red,        s:gui.foreground, "", "", "reverse")
 call s:hi("Special",     s:gui.orange,     "",               "", "", "")
 call s:hi("SignColumn",  "",               s:gui.background, "", "", "")
 call s:hi("NormalFloat", s:gui.foreground, s:gui.background, "", "", "")
-call s:hi("FloatBorder", s:gui.foreground, s:gui.background, "", "", "")
+call s:hi("FloatBorder", s:gui.cyan, "", "", "", "")
 
 call s:hi("DiagnosticError", s:gui.red,    "", "", "", "")
 call s:hi("DiagnosticWarn",  s:gui.yellow, "", "", "", "")
