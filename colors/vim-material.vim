@@ -150,6 +150,10 @@ call s:hi("SignColumn",  "",               s:gui.background, "", "", "")
 call s:hi("NormalFloat", s:gui.foreground, s:gui.background, "", "", "")
 call s:hi("FloatBorder", s:gui.foreground, s:gui.background, "", "", "")
 
+call s:hi("DiagnosticError", s:gui.red,        s:gui.background, "", "", "")
+call s:hi("DiagnosticWarn",  s:gui.yellow,     s:gui.background, "", "", "")
+call s:hi("DiagnosticHint",  s:gui.yellow,       s:gui.background, "", "", "")
+call s:hi("DiagnosticInfo",  s:gui.yellow,       s:gui.background, "", "", "")
 
 " Ruby colors
 call s:hi("rubyClassName",       s:gui.yellow, "", "", "", "bold")
