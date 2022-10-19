@@ -110,7 +110,7 @@ call s:hi("PMenuSel",     s:gui.cyan,       s:gui.selection,  "", "", "bold")
 call s:hi("ErrorMsg",     s:gui.red,        s:gui.none,       "", "", "")
 call s:hi("Error",        s:gui.red,        s:gui.none,       "", "", "")
 call s:hi("WarningMsg",   s:gui.orange,     "",               "", "", "")
-call s:hi("VertSplit",    s:gui.background, s:gui.foreground, "", "", "")
+call s:hi("VertSplit",    s:gui.pale_blue,  s:gui.background, "", "", "")
 call s:hi("Conceal",      s:gui.comment,    s:gui.background, "", "", "")
 
 call s:hi("DiffAdded",   s:gui.green, "", "", "", "")
