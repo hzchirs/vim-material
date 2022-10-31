@@ -4,7 +4,6 @@
 " Porting From: https://github.com/equinusocio/vsc-material-theme
 " Author: hzchris <hzchirs@gmail.com>
 " Source: https://github.com/hzchirs/vim-material
-" Last Modified: 10 February 2019
 " -----------------------------------------------------------------------------
 
 if version > 580
