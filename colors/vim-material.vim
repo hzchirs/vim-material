@@ -245,7 +245,7 @@ call s:hi("GitGutterDelete",       s:gui.red,   s:gui.background, "", "", "")
 call s:hi("GitGutterChangeDelete", s:gui.yellow,  s:gui.background, "", "", "")
 
 " Treesitter
-if has('nvim')
+if has('nvim') && (version >= 800)
   call s:hi("@boolean", s:gui.orange, "", "", "", "")
   call s:hi("@conditional", s:gui.cyan, "", "", "", "")
   call s:hi("@constant", s:gui.foreground, "", "", "", "")
