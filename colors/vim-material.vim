@@ -277,3 +277,6 @@ call s:hi("cssTSProperty", s:gui.yellow, "", "", "", "")
 " Treesitter javascript
 call s:hi("javascriptParens", s:gui.cyan, "", "", "", "")
 call s:hi("javascriptValue", s:gui.orange, "", "", "", "")
+
+" nvim-cmp
+call s:hi("CmpItemAbbrMatch", s:gui.blue, "", "", "", "")
