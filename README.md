@@ -7,8 +7,8 @@ __   _(_)_ __ ___        _ __ ___   __ _| |_ ___ _ __(_) __ _| |
 ```
 
 # vim-material
-[equinusocio's Material Theme](https://github.com/equinusocio/vsc-material-theme) port
-for vim.
+[Visual Studio Code Material Theme](https://github.com/material-theme/vsc-material-theme) port
+for Vim / Neovim.
 
 * supports true color terminal and gvim only.
 * supports [treesitter](https://github.com/nvim-treesitter/nvim-treesitter).
