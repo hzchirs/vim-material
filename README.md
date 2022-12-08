@@ -35,6 +35,9 @@ Installation
 ```vim
 Plug 'hzchirs/vim-material'
 
+" nvim version < 8.0
+Plug 'hzchirs/vim-material', { 'tag': 'v1.0' }
+
 " Dark
 set background=dark
 colorscheme vim-material
