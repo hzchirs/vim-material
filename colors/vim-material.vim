@@ -274,7 +274,7 @@ if has('nvim') && (version >= 800)
   call s:hi("@text.title.3.marker", s:gui.comment, "", "", "", "")
   call s:hi("@text.reference", s:gui.purple, "", "", "", "")
   call s:hi("@text.uri", s:gui.blue, "", "", "", "underline")
-  call s:hi("@punctuation.delimiter", s:gui.comment, "", "", "", "")
+  call s:hi("@text.todo", s:gui.cyan, "", "", "", "")
 endif
 
 " Treesitter html
